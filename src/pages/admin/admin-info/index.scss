@@ -1,0 +1,79 @@
+.authen-template {
+  .submit-button,
+  .login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Căn trai */
+  }
+
+  .submit-button {
+    margin-bottom: 20px; /* Khoảng cách dưới nút */
+
+    button {
+      background-color: #c58246 !important; /* Bắt buộc sử dụng màu này */
+      border: none !important;
+      color: white !important;
+      padding: 10px 20px !important;
+      font-size: 16px !important;
+      border-radius: 5px !important;
+      cursor: pointer !important;
+      transition: background-color 0.3s ease !important;
+
+      &:hover {
+        background-color: #a8703b !important; /* Màu khi hover */
+      }
+    }
+  }
+
+  .login-link {
+    margin-top: 10px; /* Khoảng cách trên liên kết đăng nhập */
+
+    a {
+      color: #1890ff !important;
+      font-weight: bold !important;
+      text-decoration: none !important; /* Không gạch chân mặc định */
+
+      &:hover {
+        text-decoration: underline !important; /* Hiệu ứng gạch chân khi hover */
+      }
+    }
+  }
+}
+.card {
+  border-radius: 30px;
+  // background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  padding: 10px; // Thêm padding để nội dung không bị dính vào viền
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Canh giữa nội dung theo chiều dọc
+  justify-content: center; // Canh giữa nội dung theo chiều ngang
+  max-width: 95%; // Giới hạn tối đa chiều rộng nếu cần
+  padding: 20px; // Thêm padding để nội dung không bị dính vào viền
+  // display: flex;
+  // align-items: center; // Canh giữa nội dung theo chiều dọc
+  // justify-content: center; // Canh giữa nội dung theo chiều ngang
+  // max-width: 95%; // Giới hạn tối đa chiều rộng nếu cần
+  margin: auto; // Canh giữa thẻ card trong layout
+}
+
+.card h1{
+  font-size:xx-large;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* From Uiverse.io by eslam-hany */ 
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  animation: rotate 2.0s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,32 @@
+.customer-content {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.customer-form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button {
+      background-color: #c58246;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #a8703b;
+      }
+    }
+  }
+}

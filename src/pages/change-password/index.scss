@@ -1,0 +1,35 @@
+.customer-content {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff; /* Nền trắng cho phần nội dung */
+
+  h1 {
+    text-align: center; /* Căn giữa cho tiêu đề */
+  }
+
+  .customer-form {
+    max-width: 600px; /* Giới hạn chiều rộng của form */
+    margin: 0 auto; /* Căn giữa form trong container */
+
+    .submit-button {
+      display: flex;
+      justify-content: center; /* Căn giữa nút */
+      margin-top: 20px;
+
+      button {
+        background-color: #c58246; /* Bắt buộc sử dụng màu này */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #a8703b; /* Màu khi hover */
+        }
+      }
+    }
+  }
+}

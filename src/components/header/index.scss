@@ -1,0 +1,150 @@
+.header-wrapper {
+  background-color: #f9f3f1;
+  color: black;
+  padding-top: 10px;
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #f9f3f1;
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+
+    .icon-group {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      svg {
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+          color: #f28a2d;
+        }
+      }
+
+      .separator {
+        display: inline-block;
+        width: 1px;
+        height: 20px;
+        background-color: #ecdcd6;
+        margin: 0 15px;
+      }
+    }
+
+    .phone-number {
+      margin-left: 15px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .user-section {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px;
+
+    .separator {
+      display: inline-block;
+      width: 1px;
+      height: 24px; /* Đảm bảo dấu gạch đủ cao để khớp với icon */
+      background-color: #ecdcd6;
+      margin-right: 10px;
+    }
+
+    svg {
+      font-size: 24px; /* Kích thước của icon người dùng */
+    }
+
+    .account-actions {
+      display: flex;
+      align-items: center; /* Đảm bảo căn giữa theo chiều dọc */
+      gap: 15px; /* Khoảng cách giữa "Thông tin tài khoản" và "Đăng xuất" */
+
+      .account-info,
+      .logout-button {
+        background-color: transparent;
+        border: none;
+        color: #c58246;
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 14px;
+        line-height: 1; /* Đảm bảo không có khoảng trắng thừa trong text */
+        &:hover {
+          color: #a8703b;
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease; // Hiệu ứng mượt khi thay đổi
+  }
+
+  .sticky {
+    position: fixed; // Cố định khi người dùng cuộn
+    top: 0; // Cố định ở đầu trang
+    left: 0;
+    z-index: 1000; // Đảm bảo header luôn nằm trên các phần tử khác
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Hiệu ứng đổ bóng để làm nổi bật
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+
+    span {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &.active {
+        color: #f28a2d; // Màu của mục khi active
+        border-bottom: 2px solid #f28a2d; // Thêm gạch dưới khi active
+      }
+
+      &:hover {
+        color: #f28a2d; // Màu khi hover
+      }
+    }
+  }
+
+  .logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logout-button {
+    background-color: transparent;
+    border: none;
+    color: #c58246;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    &:hover {
+      color: #a8703b;
+    }
+  }
+}
